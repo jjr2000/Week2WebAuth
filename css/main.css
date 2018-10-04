@@ -1,3 +1,79 @@
 body {
-    background-color: darkgrey;
+    background-color: rgb(41, 41, 41);
+    /*height: 5000px;*/
+}
+
+.banner{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: -100;
+}
+
+.slide-over{
+    z-index: -99;
+
+    position: absolute;
+    top: 400px;
+    left: 0;
+    right: 0;
+    
+    height: 200px;
+
+    background: -moz-linear-gradient(top, rgba(41,41,41,0) 0%, rgba(41,41,41,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(41,41,41,0) 0%,rgba(41,41,41,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(41,41,41,0) 0%,rgba(41,41,41,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00292929', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+.cover{
+    z-index: -99;
+
+    position: absolute;
+    top: 600px;
+    left: 0;
+    right: 0;
+    height: 100vh;
+
+    background-color: rgb(41,41,41);
+}
+.cover.top{
+    position: fixed;
+    top: 0;
+    bottom:0;
+}
+
+.heading{
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+
+    background: red;
+    background: -webkit-linear-gradient(left, orange , yellow, green, orange , yellow, green, cyan, blue, violet, cyan, blue, violet);
+    background: -o-linear-gradient(right, orange , yellow, green, orange , yellow, green, cyan, blue, violet, cyan, blue, violet);
+    background: -moz-linear-gradient(right, orange , yellow, green, orange , yellow, green, cyan, blue, violet, cyan, blue, violet);
+    background: linear-gradient(to right, orange , yellow, green, orange , yellow, green, cyan, blue, violet, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.the-box{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+
+    border-radius: 10px;
+
+    width: 50vw;
+
+    background-color: fuchsia;
+    -webkit-box-shadow: 9px 10px 22px 0px rgba(255,0,255,0.51);
+    -moz-box-shadow: 9px 10px 22px 0px rgba(255,0,255,0.51);
+    box-shadow: 9px 10px 22px 0px rgba(255,0,255,0.51);
+
+}
+
+.the-wayne{
+    width: 100%;
 }
